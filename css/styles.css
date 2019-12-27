@@ -1,0 +1,561 @@
+/*****Tag Selectors****/
+body, html {
+  margin: 0;
+  height: 100%;
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/****Nav Bar****/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  background-color: #f6ecbf;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #3c4245;
+}
+
+.logo a:hover {
+  color: black;
+}
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  width: 40%;
+  color: #3c4245;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3c4245;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #3c4245;
+  margin: 5px;
+}
+
+
+/*******BLURRY IMAGE*****/
+.bg-image {
+  /* The image used */
+  background-image: url("../images/header.jpg");
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/***Socials***/
+.socials {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  margin-top: 5%;
+}
+
+.john-logo{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  left: 50%;
+  top: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.john-logo-pic{
+  width: 60%;
+
+}
+
+.fa-facebook {
+  font-size: 25px;
+  color: white;
+}
+
+.fa-facebook:hover {
+  color: #3c4245;
+}
+
+.copyright-index{
+  position: absolute;
+  transform: translate(-0%, -90%);
+}
+
+/*****Home Page****/
+.leaf-bg {
+  background-image: url("../images/leaf-bg.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/******About Page*****/
+.about-facts {
+  padding-top: 20px;
+  margin-left: 26%;
+  margin-right: 15%;
+  padding-bottom: 7%;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+/*****Resources Page****/
+.quote {
+  text-align: center;
+  color: #233714;
+  font-weight: bolder;
+}
+
+.flyer {
+  text-align: center;
+  color: #233714;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.flyer:hover {
+  color: #f9f9f9;
+}
+
+.sub-text {
+  text-align: center;
+  font-weight: bold;
+  color: #233714;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+  line-height: 2;
+}
+
+.list a:hover {
+  color: white;
+}
+
+/****Footer****/
+.footer {
+  font-size: 20px;
+  margin-left: 25%;
+  margin-right: 15%;
+  padding-bottom: 10%;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #233714;
+  font-weight: bolder;
+}
+
+/*****Mental Health Page****/
+.mental-health-bg {
+  background-image: url("../images/mental-health.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mental-facts {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  margin-right: 10%;
+  margin-left: 50%;
+  padding-top: 50px;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.list-mental-health a {
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+
+.list-mental-health a:hover {
+  color: black;
+}
+
+.mental-health-p2-bg {
+  background-image: url("../images/mental-health-p2.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mental-facts-p2 {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  margin-right: 10%;
+  margin-left: 55%;
+  padding-top: 50px;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+/****Education Page*****/
+.years {
+  text-align: center;
+}
+
+.education-bullets {
+  text-align: center;
+  display: inline-block;
+}
+
+.education-list {
+  border: 3px solid #233714;
+  text-align: left;
+  padding: 8px;
+}
+
+.education-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.education-table a {
+  text-decoration: none;
+  color: black;
+}
+
+.education-table a:hover {
+  color: #de6b35;
+}
+
+.banner {
+  text-align: center;
+  border: 2px solid black;
+  padding: 35px;
+  background-image: url("../images/wood-banner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.title-info {
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 10px;
+}
+
+.title-info ul{
+  list-style: none;
+}
+
+.sub-table {
+  width: 100%;
+}
+
+.sub-list {
+  text-align: center;
+  padding: 30px;
+}
+
+.panels {
+  min-height: 30vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition:
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel>* {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel.open {
+    flex: 2;
+  }
+
+.footer-sub-pages{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10%;
+  font-family: 'Quicksand', sans-serif;
+  color: #233714;
+  font-weight: bolder;
+}
+
+
+/*****Scholarship Page*****/
+.scholarship-img{
+  margin: 3%;
+  height: 320px;
+  width: 25%;
+}
+
+.scholarship-img1{
+  transform: rotate(90deg);
+  margin: 3%;
+  height: 320px;
+  width: 25%;
+}
+
+.scholarship-text{
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 4%;
+  padding: 10px;
+}
+
+.scholarship-div{
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+  color: #233714;
+  margin-bottom: 10%;
+}
+
+
+.scholarship-table{
+  border: 3px solid #233714;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+.scholarship-list{
+  border: 3px solid #233714;
+  padding: 8px;
+  text-align: center;
+}
+
+.scholarship-table a {
+  text-decoration: none;
+  color: black;
+}
+
+.scholarship-table a:hover {
+  color: #de6b35;
+}
+
+/*****Donate Page****/
+.donate-table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.donate-list{
+  padding: 8px;
+  text-align: center;
+
+}
+
+.amazon-pic{
+margin: 3%;
+margin-left: 30%
+}
+
+.shaklee-pic{
+margin-left: 27%;
+margin-bottom: 3%;
+}
+
+/****LOVED ONES****/
+.loved-ones{
+  width: 20%;
+}
+
+/****MEDIA QUERY***/
+@media screen and (max-width:1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav a:hover::before {
+    display: none;
+  }
+
+  .bg-text {
+    top: 60%;
+  }
+
+  .about-facts {
+    font-weight: bolder;
+  }
+
+  .mental-health-bg {
+    background-position: center center;
+  }
+
+  .socials{
+    top: 90%;
+  }
+
+  .john-logo{
+    display: none;
+  }
+
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 9vh;
+    background-color: #f6ecbf;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .amazon-pic{
+    margin-left: 5%;
+  }
+
+  .shaklee-pic{
+    margin-left: 0;
+  }
+
+  .scholarship-img{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+  }
+
+  .scholarship-img1{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+
+  }
+
+  .panels{
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  .panel{
+    padding: 5px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
